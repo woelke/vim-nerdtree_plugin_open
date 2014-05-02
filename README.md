@@ -13,6 +13,6 @@ Extend your .vimrc file with the following command:
     let g:nerdtree_plugin_open_cmd = "gnome-open" "or "xdg-open", "open" (for MacOs)
 
 ## Usage
-Select an arbitrary file and press the button **E**      
+Select an arbitrary file and press the button <**E**>      
 
 

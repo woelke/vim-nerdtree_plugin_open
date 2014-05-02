@@ -13,7 +13,7 @@ Extend your .vimrc file with the following command:
 
     let g:nerdtree_plugin_open_cmd = '<your command>'
 
-"Your command" depends the operating system and desktop environment, just check if one of them is available: 
+"Your command" depends on the operating system and desktop environment, just check if one of them is available: 
 
 * xdg-open (desktop-independent tool)
 * gnome-open (gnome)

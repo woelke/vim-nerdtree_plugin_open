@@ -10,9 +10,9 @@ Install this plugin with your favorite plugin-manager or do in manual with:
 
 Extend your .vimrc file with the following command:
 
-    let g:nerdtree_plugin_open_cmd = "gnome-open" or "xdg-open", "open" (for MacOs)
+    let g:nerdtree_plugin_open_cmd = "gnome-open" "or "xdg-open", "open" (for MacOs)
 
 ## Usage
-    Select an arbitrary file and press the button **E**      
+Select an arbitrary file and press the button **E**      
 
 

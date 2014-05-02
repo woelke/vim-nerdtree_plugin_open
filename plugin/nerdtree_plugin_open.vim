@@ -1,3 +1,10 @@
+echo "start!!!!!!!!!!"
+
+if exists("g:loaded_nerdtree_plugin_open")
+    finish
+endif
+let g:loaded_nerdtree_plugin_open = 1
+
 function! s:callback_name()
     return matchstr(expand('<sfile>'), '<SNR>\d\+_') . 'callback'
 endfunction

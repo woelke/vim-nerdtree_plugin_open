@@ -1,4 +1,4 @@
-This Repro was a fork from [vim-nerdtree plugin collections](https://github.com/t9md/vim-nerdtree_plugin_collections)
+This Repro was originally a fork from [vim-nerdtree_plugin_collections](https://github.com/t9md/vim-nerdtree_plugin_collections)
 
 ## NerdtreePluginOpen
 NerdtreePluginOpen extends [https://github.com/scrooloose/nerdtree](nerdtree) with the ability to open non text files with an appropriate application independent from vim.

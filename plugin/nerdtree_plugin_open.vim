@@ -1,5 +1,3 @@
-echo "start!!!!!!!!!!"
-
 if exists("g:loaded_nerdtree_plugin_open")
     finish
 endif
@@ -13,8 +11,7 @@ function! s:callback()
     let path = g:NERDTreeFileNode.GetSelected().path.str({'escape': 1})
 
     if !exists("g:nerdtree_plugin_open_cmd")
-        echoerr "please set 'g:nerdtree_open_cmd'  to 'open','gnome-open' or 'xdg-open'"
-        echoerr "or install vimproc from 'https://github.com/Shougo/vimproc'"
+        echoerr "please set 'g:nerdtree_plugin_open_cmd'  to 'open','gnome-open' or 'xdg-open'"
         return
     endif
     let cmd = g:nerdtree_plugin_open_cmd . " " . path
@@ -23,11 +20,6 @@ endfunction
 
 call NERDTreeAddKeyMap({
     \ 'callback': s:callback_name(),
-    \ 'quickhelpText': 'close nerd tree if open',
+    \ 'quickhelpText': 'open with external programm',
     \ 'key': 'E',
     \ })
-
-call NERDTreeAddMenuItem({
-    \ 'text': '(o)open with system command',
-    \ 'shortcut': 'o',
-    \ 'callback': s:callback_name()})

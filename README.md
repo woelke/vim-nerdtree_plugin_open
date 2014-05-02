@@ -3,6 +3,7 @@ This Repro was originally a fork from [vim-nerdtree_plugin_collections](https://
 ## NerdtreePluginOpen
 NerdtreePluginOpen extends [Nerdtree](https://github.com/scrooloose/nerdtree) with the ability to open non text files with an appropriate application independent from vim.
 
+
 ## Install
 Install this plugin with your favorite plugin-manager or manual with the following command:
     
@@ -10,7 +11,18 @@ Install this plugin with your favorite plugin-manager or manual with the followi
 
 Extend your .vimrc file with the following command:
 
-    let g:nerdtree_plugin_open_cmd = "gnome-open" "or "xdg-open", "open" (for MacOs)
+    let g:nerdtree_plugin_open_cmd = '<your command>'
+
+"Your command" depends the operating system and desktop environment you use, just check if one of them is available: 
+
+* xdg-open (desktop-independent tool)
+* gnome-open (gnome)
+* exo-open (xfce)
+* gvfs-open (whatever, I have no idea)
+* kde-open (kde)
+* open (MacOS)
+* use your own command, if you think that stuff is to creepy
+    
 
 ## Usage
 Select an arbitrary file and press the button <**E**>.      

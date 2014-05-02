@@ -25,6 +25,6 @@ Extend your .vimrc file with the following command:
     
 
 ## Usage
-Select an arbitrary file and press the button <**E**>.      
+Select an arbitrary file or directory and press the button <**E**> to open the file with the default programm choosen by the operating system or the directory with the default file manager.
 
 

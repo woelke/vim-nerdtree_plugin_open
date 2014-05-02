@@ -1,7 +1,7 @@
 This Repro was originally a fork from [vim-nerdtree_plugin_collections](https://github.com/t9md/vim-nerdtree_plugin_collections)
 
 ## NerdtreePluginOpen
-NerdtreePluginOpen extends [https://github.com/scrooloose/nerdtree](nerdtree) with the ability to open non text files with an appropriate application independent from vim.
+NerdtreePluginOpen extends [Nerdtree](https://github.com/scrooloose/nerdtree) with the ability to open non text files with an appropriate application independent from vim.
 
 ## Install
 Install this plugin with your favorite plugin-manager or manual with the following command:

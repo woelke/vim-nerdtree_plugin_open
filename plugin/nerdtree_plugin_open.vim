@@ -14,12 +14,10 @@ function! s:callback()
         return
     endtry
 
-        if !exists("g:nerdtree_plugin_open_cmd")
-            echoerr "please set 'g:nerdtree_plugin_open_cmd'  to 'open','gnome-open' or 'xdg-open'"
-            return
-        endif
+    if exists("g:nerdtree_plugin_open_cmd")
         let cmd = g:nerdtree_plugin_open_cmd . " " . path
         call system(cmd)
+    endif
 endfunction
 
 call NERDTreeAddKeyMap({

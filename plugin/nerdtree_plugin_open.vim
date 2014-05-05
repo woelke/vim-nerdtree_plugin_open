@@ -8,14 +8,18 @@ function! s:callback_name()
 endfunction
 
 function! s:callback()
-    let path = g:NERDTreeFileNode.GetSelected().path.str({'escape': 1})
-
-    if !exists("g:nerdtree_plugin_open_cmd")
-        echoerr "please set 'g:nerdtree_plugin_open_cmd'  to 'open','gnome-open' or 'xdg-open'"
+    try
+        let path = g:NERDTreeFileNode.GetSelected().path.str({'escape': 1})
+    catch
         return
-    endif
-    let cmd = g:nerdtree_plugin_open_cmd . " " . path
-    call system(cmd)
+    endtry
+
+        if !exists("g:nerdtree_plugin_open_cmd")
+            echoerr "please set 'g:nerdtree_plugin_open_cmd'  to 'open','gnome-open' or 'xdg-open'"
+            return
+        endif
+        let cmd = g:nerdtree_plugin_open_cmd . " " . path
+        call system(cmd)
 endfunction
 
 call NERDTreeAddKeyMap({

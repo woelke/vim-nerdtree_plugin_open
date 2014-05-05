@@ -13,7 +13,7 @@ Extend your .vimrc file with the following command:
 
     let g:nerdtree_plugin_open_cmd = '<your command>'
 
-"Your command" depends the operating system and desktop environment, just check if one of them is available: 
+"Your command" depends on the operating system and desktop environment, just check if one of them is available: 
 
 * xdg-open (desktop-independent tool)
 * gnome-open (gnome)
@@ -25,6 +25,6 @@ Extend your .vimrc file with the following command:
     
 
 ## Usage
-Select an arbitrary file and press the button <**E**>.      
+Select an arbitrary file or directory and press the button <**E**> to open the file with the default program choosen by the operating system or the directory with the default file manager.
 
 
